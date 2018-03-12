@@ -1,0 +1,97 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/accouting.js')
+    script.
+        document.title="电子商务(网站开发工程师方向)_习水县中等职业学校特色专业网";
+        $.get('http://api.7171.la/api/profession?token=xszy&code=fefb70fa72b81bef535b515fae46fde8&type=83');
+
+
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg.row.pl-0
+            .item-nav
+                .item-nav-title
+                    span.text-center 专业设置
+                div
+                    a(href='/computer')
+                        span.h4 计算机应用
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | PHP开发工程师方向
+                div
+                    a(href='/computer1')
+                        span.h4 计算机应用
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 前端开发工程师方向
+                div
+                    a(href='/computer2')
+                        span.h4 计算机应用
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 计算机网络技术方向
+                div
+                    a(href='/artdesign')
+                        span.h4 计算机平面设计
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 平面设计方向
+                div
+                    a(href='/artdesign1')
+                        span.h4 计算机平面设计
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 网页电商设计方向
+                div.active
+                    a(href='/accouting')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 软件技术方向
+                div
+                    a(href='/accouting1')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 网站开发工程师方向
+                div
+                    a(href='/accouting2')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 软件技术与信息服务方向
+
+                div.zhaosheng
+                    a(href='/zszt/brochure')
+                        img.img-responsive(src='offical/images/bg1.png')
+                    a(href='/zszt/news')
+                        img.img-responsive(src='offical/images/bg2.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 会计（投资与理财方向）
+            div.special-box
+                div
+                    div.special.target
+                        i.iconfont.icon-mubiao
+                        span 培养目标
+                    span#train
+                    .pic-box
+                        div.col-xs-4
+                            img.img-responsive#img1
+                        div.col-xs-4
+                            img.img-responsive#img2
+                        div.col-xs-4
+                            img.img-responsive#img3
+                div
+                    div.special.course
+                        i.iconfont.icon-shu
+                        span 主要课程
+                    span#course
+                div
+                    div.special.area
+                        i.iconfont.icon-zhongqingdianxinicon05
+                        span 就业领域
+                    span#area

@@ -1,0 +1,87 @@
+footer{
+    width: 100%;
+    /*height: 205px;*/
+    position: relative;
+    background: #fafafa;
+}
+.footer-content{
+    padding: 1% 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.footer-logo{
+    margin: 15px 0;
+}
+.footer-content li,footer span{
+    color: #333333;
+}
+.footer-content li{
+    margin-left: 8%;
+}
+.footer-content li a{
+    color: #224989;
+}
+.footer-item{
+    margin: 36px 0;
+}
+.footer-item span{
+    margin: 5px 0;
+}
+footer span{
+    display: block;
+    text-align: center;
+}
+.footer-content>div >div img{
+    /*display: block;*/
+    margin: 15px auto;
+}
+.footer-content >div:nth-of-type(2){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+.qcore-box span{
+    font-size: 12px;
+}
+.qcore-box img{
+    display: block;
+    margin: 0 auto;
+}
+.footer-content >div:nth-of-type(2) div{
+    border-left: 1px solid #c5cdd9;
+    border-right: 1px solid #c5cdd9;
+}
+.footer-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background:#891b1c;
+}
+.footer-bottom span{
+    padding: 5px;
+    color: #d6c5cc;
+}
+.footer-right{
+    padding: 0;
+}

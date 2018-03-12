@@ -1,0 +1,997 @@
+html{
+	height: 100%;	
+}
+html,body{
+	font-family: "微软雅黑";
+}
+body{
+	position: relative;
+	overflow-x: hidden;
+	min-width: 320px;
+	min-height: 500px;
+	left: 0;
+	-webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+a{
+	color: #000;
+}
+a:hover,a:focus{
+	color: #000;
+	text-decoration: none;
+	outline:hidden;
+}
+h4{
+	color: #333;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	padding: 0;
+}
+.center{
+	margin: 27px auto;
+	overflow: hidden;
+}
+.center >div{
+	margin: 15px 0;
+}
+#none{
+	display: none;
+    margin: 15px 0;
+}
+.banner-bottom{
+	margin-bottom: 0;
+}
+.banner img{
+	width: 100%;
+}
+.pl-0{
+	padding-left: 0;
+}
+.two{
+	overflow: hidden;
+	width: 100%;
+}
+.two > div{
+	float: left;
+	width: 48%;
+	margin: 15px 0;
+}
+.two > div:nth-of-type(even){
+	margin-left: 4%;
+}
+.index >div{
+	padding: 0 10px;
+	margin: 15px 0;
+}
+.index >div:last-of-type{
+	padding-right: 0;
+}
+.device{
+	padding-left: 0 !important;
+}
+.lunbo i{
+	color: #fff;
+	font-size: 30px;
+	line-height: 60px;
+	margin: 0 5px;
+	text-align: center;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next,.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	background: rgba(255,255,255,0);
+	opacity: 1;
+}
+.shizi i,.gallery-top i{
+	color: #faba4b;
+	font-size: 35px;
+}
+.shizi img{
+	margin: 0 auto;
+}
+.lunbo .swiper-button-next,.device .swiper-button-prev{
+	width: 40px;
+	height: 60px;	
+}
+.lunbo .swiper-button-next:hover,.device .swiper-button-prev:hover{
+	background: rgba(0,0,0,0.5);
+}
+.lunbo img{
+	width: 100%;
+}
+.device-btn:hover{
+	background: rgba(0,0,0,.3);
+}
+.lunbo .carousel{
+	margin-bottom: 10px;
+	height: 280px;
+}
+.lunbo .pagination{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	margin: 0;
+	overflow: hidden;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	z-index: 1;
+}
+.lunbo .pagination h5{
+	color: #fff;
+	margin-left: 5%;
+	word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	width: 90%;
+}
+.lunbo .pagination .index{
+	float: right;
+	margin-right: 1%;
+}
+
+.lunbo .pagination span{
+	display: inline-block;
+	background: rgba(255,255,255,0.5);
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 5px;
+	cursor: pointer;
+}
+.lunbo .pagination span:hover{
+	background: #ffb10f;
+}
+.index .active{
+	background: #ffb10f !important;
+}
+.pagination div:first-of-type{
+	display: inline-block;
+	height: 100%;
+	margin-left: 1%;
+}
+.pagination div:first-of-type h5{
+	color: #fff;
+	font-weight: bold;
+    margin-top: 12px;
+    word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	width: 100%;
+}
+.shizi{
+	padding: 30px 0;
+}
+.new{
+	background: #fff;
+	overflow: hidden;
+}
+.new >div{
+	margin: 30px 0;
+}
+.news-title{
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+	overflow: hidden;
+}
+.news-title p{
+	height: 3px;
+	margin: 0;
+	background-image: -webkit-linear-gradient(to left, #089878, #3dd05c, #089878);
+	background-image: linear-gradient(to left, #089878, #3dd05c, #089878);
+	background-image: -moz-linear-gradient(to left, #089878, #3dd05c, #089878);
+}
+.news-title i,.news-title span{
+	color: #01a985;
+	margin-right: 5px;
+}
+.news-title >div:first-of-type{
+	float: left;
+	margin: 10px;
+}
+.news-box{
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+	overflow: hidden;
+}
+.news-box >div{
+	margin: 15px 0;
+}
+.more{
+	float: right;
+	margin: 10px;
+	cursor: pointer;
+}
+.more i{
+	margin: 0;
+}
+.more i,.more span{
+	color: #01a985;
+}
+.campus{
+	overflow: hidden;
+	border-bottom: 1px solid #e4e4e4;
+}
+.campus>div:first-of-type{
+	float: left;
+	border-bottom: 1px solid #007e40;
+    padding-bottom: 8px;
+    width: 100px;
+}
+.campus i{
+	color: #007e40;
+}
+.campus span{
+	font-size: 16px;
+	font-weight: bolder;
+	color: #444343;
+}
+.campus .more{
+	margin-top: 0;
+}
+.campus .more span{
+	color: #9d9d9d;
+}
+.campus-box{
+	overflow: hidden;
+}
+.campus-box>div{
+	float: left;
+	width: 23%;
+	margin:15px 0;
+	cursor: pointer;
+
+}
+.campus-box>div img{
+	display: block;
+	margin: 20px auto 20px;
+	-webkit-transition: all ease-in-out .2s;
+	-moz-transition: all ease-in-out .2s;
+	-ms-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s;
+}
+.campus-box>div:nth-of-type(2),.campus-box>div:nth-of-type(3){
+	margin: 15px 2% ;
+}
+.campus-box>div:hover img{
+	margin-top: 10px;
+  	box-shadow: 0 26px 40px -24px rgba(3, 21, 70, 0.3);
+}
+.news-list > div i,.news-list > div p{
+	float: left;
+	color: #656565;
+}
+.news-list > div{
+	padding: 7px 0;
+    overflow: hidden;
+}
+.news-list > div p{
+	margin-bottom: 0;
+	font-size: 15px;
+	word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	width: 70%;
+}
+.news-list > div span{
+	float: right;
+	color: #9c9c9c;
+}
+.jiuye > div{
+	overflow: hidden;
+	background: #f2f2f2;
+	margin-bottom: 3px;
+	padding: 12px 7px;
+}
+.jiuye >div i{
+	width: 5%;
+	float: left;
+	color: #333;
+}
+.jiuye >div p{
+	font-size: 15px;
+	width: 95%;
+	float: left;
+	margin-bottom: 0;
+	color: #333;
+	word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;
+}
+.jiuye >div span{
+	display: block;
+	color: #9b9b9b;
+	margin-top: 3px;
+}
+.major{
+	border: 1px solid #d9d9d9;
+}
+.major-title{
+	background: #f0f0f0;
+	padding: 10px;
+}
+.major-title i,.major-title span{
+	color: #4ab17e;
+}
+.major-title .more{
+	margin: 0 8px;
+}
+.major-title .more i,.major-title .more span{
+	color: #0e884c;
+}
+.major-box{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.major-box >div{
+	margin: 10px 0;
+}
+.major-box >div img{
+	margin: 0 auto;
+}
+.zhaosheng img{
+	margin-bottom: 20px;
+}
+.info{
+	border: 1px solid #e1e1e1;
+}
+.info-title{
+	padding: 2px 0;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+}
+.info-title h4{
+	color: #097742;
+	font-weight: bolder;
+	display: inline-block;
+}
+.info-title-right{
+	float: right;
+	margin-top: 10px;
+}
+.info-title-right i{
+	display: inline-block;
+	color: #b4b4b4;
+	vertical-align: middle;
+}
+.info-title-right span,.info-title-right a{
+	color: #b4b4b4;
+}
+.theme-list >div {
+    overflow: hidden;
+	padding: 20px 0 0;
+	margin: 0px;
+    width: 100%;
+    padding-left: 1%;
+    float: left;
+}
+.theme-list >div img{
+	display: block;
+	width: 100%;
+}
+.imgThumb{
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+.dang >div{
+	width: 50%;
+}
+.dang >div:first-of-type, .dang >div:nth-of-type(2){
+    border-bottom: 1px dashed #e5e5e5;
+}
+.dang >div:nth-of-type(even){
+    border-left: 1px dashed #e5e5e5;
+}
+.theme-list >div > div {
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.theme-img{
+	width: 110px;
+	height:75px;
+}
+.theme-list >div:hover .h4{
+	color: #007e40;
+}
+.dang .tl-title .h4{
+	width: 90%;
+	font-size: 15px;
+}
+.tl-title .h4 {
+    margin: 0 0 10px;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tl-title span:nth-of-type(2) {
+    float: right;
+    color: #c8c8c8;
+    font-size: 14px;
+}
+.tl-title span {
+    display: inline-block;
+    text-indent: 0;
+}
+.theme-list p {
+    color: #a6a6a6;
+    text-indent: 29px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px !important;
+}
+.p-page .pagination>li>a{
+	margin-right: 5px;
+	background: #e8e8ea;
+	color: #5e5e5e;
+}
+.p-page .pagination{
+	margin-left: 20%;
+}
+.m-page a{
+	border-radius: 5px !important;
+	color: #007e40;
+}
+.m-page li:first-of-type{
+	float: left;
+}
+.m-page li:last-of-type{
+	float: right;	
+}
+.content{
+    margin-top: 4px;
+    border-top: 2px solid #ececec;
+    padding-top: 5px;
+}
+.sc-info{
+	margin-top: 30px;
+    display: block;
+}
+.sc-info img{
+	max-width: 100%;
+}
+.list-item{
+    margin: 14px 0 0px;
+    /*border-bottom: 1px dashed #ebebeb;*/
+}
+.list-item i,.list-item p,.list-item span{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.list-item i{
+    color: #44aa79;
+    font-size: 14px;
+    vertical-align: top;
+}
+.list-item p{
+    color: #4e4e4e;
+    font-size: 15px;
+    line-height: 15px;
+    word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	width: 	64%;
+}
+.list-item span{
+	float: right;
+    color: #999;
+    font-size: 14px;
+    line-height: normal;
+}
+.info-content >div:first-of-type{
+	padding-left: 0;
+}
+.item-nav{
+	margin-bottom: 15px;
+}
+.item-nav-title{
+	background: #1f995f !important;
+}
+.item-nav-title span{
+	color: #fff !important;
+	display: block;
+	margin: 0 !important;
+}
+.item-nav > div{
+	background: #f5f5f5;
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px 0;
+	width: 78%;
+	cursor: pointer;
+}
+.item-nav > div:first-of-type{
+	position: relative;
+}
+.item-nav > div:first-of-type img{
+    position: absolute;
+    left: -10px;
+    top: 7px;
+}
+.item-nav > div:first-of-type p{
+	color: #fff;
+    font-weight: bolder;
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    font-size: 20px;
+}
+.item-nav > div i{
+	color: #dbdbdb;
+	margin-left: 10%;
+	margin-right: 2%;
+	-webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+.item-nav > div span:first-of-type{
+	margin-left: 19%;
+}
+.item-nav > div span{
+	display: block;
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+	display: block;
+	margin: 10px 0;
+	-webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+.item-nav > div.active i,.item-nav > div:hover i{
+	color: #ffc000;
+}
+.item-nav > div.active span,.item-nav > div:hover span{
+	color: #0e814a;
+}
+.item-nav > div:nth-of-type(6){
+	border-bottom: 0;
+	margin-bottom: 20px;
+}
+.zhaosheng{
+	background: #fff !important;
+	border: 0 !important;
+}
+.special{
+    width: 110px;
+    height: 35px;
+	background: url(../images/bg3.png) 97% 97% no-repeat;
+	border: 1px solid #f6f6f6;
+	margin: 10px 0;
+}
+.special i,.special span{
+	padding: 7px 5px;
+	display: inline-block;
+}
+.target i,.target span{
+	color: #242e76;
+}
+.special span{
+	font-size: 16px;
+	padding-left: 0;
+}
+.course{
+	background: url(../images/bg4.png) 97% 97% no-repeat;
+}
+.area{
+	background: url(../images/bg5.png) 97% 97% no-repeat;
+}
+.course i,.course span{
+	color: #06a28d;
+}
+.area i,.area span{
+	color: #5c801c;
+}
+.special-box >div{
+	margin-bottom: 30px;
+}
+.special-box >div >span{
+	display: inline-block;
+	text-indent: 32px;
+	font-size: 16px;
+	line-height: 26px;
+}
+.special-box >div >div{
+	overflow: hidden;
+	margin: 10px 0;
+}
+.sign{
+	width: 86%;
+	margin: 0 auto;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border: 10px solid;
+    border-image: -webkit-linear-gradient( #fff, #ededed) 30 30;
+    border-image: -moz-linear-gradient( #fff, #ededed) 30 30;
+    border-image: linear-gradient( #fff, #ededed) 30 30;
+    padding: 10px;
+    overflow: hidden;
+}
+.sign .info-title{
+	border: 0;
+	padding: 0;
+}
+.sign-form .form-group {
+    display: flex;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    justify-content: center;
+    align-items: center;
+}
+.sign-form .control-label{
+	float: right;
+	padding: 0 !important;
+	color: #3e3e3e;
+}
+.choose {
+    position: relative;
+    height: 30px;
+}
+.choose .radio {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #0c4757;
+    padding-left: 25px;
+    padding-top: 0;
+    cursor: pointer;
+    top: 4px;
+}
+.choose .radio input {
+    position: absolute;
+    left: -9999px;
+}
+.choose .radio i {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    outline: 0;
+    border: 1px solid #e4e4e4;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+}
+.choose .radio input + i:after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0e76d2;
+    opacity: 0;
+    transition: opacity .1s;
+    -webkit-transition: opacity .1s;
+}
+.choose .radio input:checked + i:after {
+    opacity: 1;
+}
+.sign-form .form-group i{
+	color: #ee0000;
+	font-style: normal;
+	display: inline-block;
+    vertical-align: sub;
+    margin-right: 5px;
+    margin-bottom: 0;
+    float: initial;
+}
+.sign-form .form-group span{
+	color: #cc0000;
+}
+.tip span{
+	color: #666 !important;
+}
+.sign-form .btn{
+    padding: 6px 25px;
+	background: #ffc106;
+    -moz-box-shadow: 0px 2px 1px #c99300;
+    -webkit-box-shadow: 0px 2px 1px #c99300;
+    box-shadow: 0px 2px 1px #c99300;
+    width: 30%;
+}
+.contact-box{
+	margin: 40px 0;
+}
+.contact-box label{
+	color: #333;
+	font-size: 15px;
+	display: block;
+}
+.contact-box img{
+	display: block;
+	margin: 10px auto;
+}
+.contact-box p{
+	display: inline-block;
+	margin-left: 49px;
+    margin-top: 12px;
+}
+.contact-box span{
+	color: #333;
+	font-size: 15px;
+	display: block;
+}
+.contact-address{
+	margin-bottom: 15px;
+}
+.contact-address label{
+	font-size:15px;
+	padding-bottom: 5px;
+}
+.contact-address span{
+	display: block;
+	text-indent: 0;
+	color: #3b3b3b;
+	line-height: 25px;
+	margin: 10px 0;
+}
+.news{
+	margin: 25px 0;
+}
+.news .h3 {
+    display: block;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+.news-info {
+	margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.news-info span {
+    color: #b8b8b8;
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: 14px;
+    text-indent: 0;
+}
+.page img{
+	display: block;
+	margin: 15px auto;
+	max-width: 100%;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #0a924a !important;
+    border-color: #0a924a;
+}
+.pagination>.active>a{
+	color: #fff !important;
+}
+.pagination>li>a, .pagination>li>span{
+	color: #c3c3c3;
+}
+.pagination>li>a:focus, .pagination>li>a:hover span, .pagination>li>span:focus, .pagination>li>span:hover{
+	color: green !important;
+}
+.contacr-address{
+	margin: 10px 0;
+}
+.contacr-address label{
+	font-size: 16px;
+}
+.contacr-address span{
+	display: block;
+	margin: 5px 0;
+}
+.teacher-title{
+	margin: 30px 0;
+}
+.teacher-title span{
+	display: block;
+	font-size: 16px;
+	text-indent: 32px;
+	color: #333;
+	line-height: 27px;
+}
+.teacher-box{
+	width: 21%;
+	margin: 2% 2%;
+	float: left;
+}
+.tea-box{
+	overflow: hidden;
+	border: 1px solid #E4E4E4;
+	border-top: 0;
+}
+.tea-box >div{
+	float: left;
+	width: 25%;
+	margin: 12px 0px 10px;
+	padding: 0 2px;
+}
+.tea-box img{
+	display: block;
+	width: 100%;
+}
+.tea-box p{
+	margin: 5px 0;
+	color: #474747;
+	font-size: 16px;
+}
+.tea-box i{
+	font-style: normal;
+	color: #01a985;
+	font-size: 14px;
+	display: inline-block;
+	float: right;
+	margin: 2px;
+}
+.tea-box span{
+	color: #666;
+}
+.tea-box >div >span{
+	height: 40px;
+	overflow: hidden;
+	display: inline-block;
+}
+.teacher-box img{
+	width: 100%;
+}
+.teacher-box >div{
+	position: relative;
+	cursor: pointer;
+}
+.teacher-box >div:hover >div{
+	top:0;
+	visibility: visible;
+}
+.teacher-box >div:hover >p{
+	visibility: hidden;
+}
+.teacher-box >div >div{
+	position: absolute;
+	top: 90%;
+	bottom: 0;
+	width: 100%;
+	background: rgba(52,90,84,0.8);
+	display:table-cell;  
+	visibility: hidden;
+	text-align:center;  
+	vertical-align:middle;
+	-webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+.teacher-box >div p{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background: rgba(52,90,84,0.8);
+	margin: 0;
+	padding: 5px 0;
+}
+.teacher-box >div span{
+	font-size: 14px;
+}
+.teacher-box >div p:last-child{
+	top: 8%;
+	padding: 15px;
+	background: transparent;
+}
+.action-news-list >div {
+    margin: 15px 0;
+    border-bottom: 1px dashed #ebebeb;
+}
+.action-news-list >div p, .action-news-list >div span {
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.action-news-list >div p {
+    display: inline-block;
+    color: #4e4e4e;
+    font-size: 15px;
+    line-height: 15px;
+    word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	width: 70%;
+}
+.action-news-list >div span {
+    display: inline-block;
+    float: right;
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: normal;
+}
+.item-nav > div .active span, .item-nav > div:hover span{
+	color: #0e814a;
+}
+.news {
+    margin: 25px 0;
+}
+.news .h3 {
+    display: block;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+.pic-box{
+	overflow: hidden;
+}
+.sc{
+	padding: 0 2%;
+}
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 2;
+	min-width: 320px;
+	visibility: hidden;
+}
+.mask > div {
+	position: fixed;
+	top: 10%;
+	left: 5%;
+	width: 90%;
+	height:80%;
+}
+.mask img{
+	display: block;
+	margin: 0 auto;
+}
+.gallery-thumbs{
+	margin-top: 15px;
+}
+.gallery-thumbs .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.7;
+}
+.gallery-thumbs .swiper-slide-active {
+	opacity: 1;
+}

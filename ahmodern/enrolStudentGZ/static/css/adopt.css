@@ -1,0 +1,301 @@
+@media only screen and (max-width: 1650px) {
+	
+}
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+	
+}
+@media only screen and (max-width: 1280px) {
+	
+	
+}
+@media only screen and (max-width: 1200px) {
+	.footer-content li {
+	    margin-left: 5%;
+	}
+	.item-nav > div{
+		width: 97%;
+	}	
+	.list-item {
+	    margin: 0 0 15px;
+	    /* border-bottom: 1px dashed #ebebeb; */
+	}
+	.passageway >div img {
+	    padding: 18px 4px;
+	}
+}
+@media only screen and (max-width: 1100px){
+	.passageway >div div{
+		left: 97px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+
+	
+}
+@media only screen and (max-width: 991px){
+	.pc-bg,.pc-item-nav,.p-page {
+		display: none;
+	}
+	.m-bg,.footer-content,.footer-content >div:nth-of-type(2),.m-item-nav,.m-page{
+		display: block;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	.banner-bottom{
+		padding: 0;
+	}
+	footer{
+		height: auto;
+	}
+	.footer-content{
+		padding: 1% 0 5%;
+	}
+	.footer-content > div,.footer-content > div >div{
+		margin: 1% 0;
+	}
+	.footer-content >div:nth-of-type(2) div{
+		border: 0;
+	}
+	.footer-content>div img{
+		margin: 10px auto;
+	}
+	.footer-content>div img:nth-of-type(3){
+		height: 1px;	
+	}	
+	.footer-content li{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	}
+	.passageway >div img {
+	    padding: 8px 15px 8px 25px;
+	}
+	.banner{
+		margin-top: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.banner img{
+		width: 100%;
+	}
+	.three > div{
+		width: 100%;
+	    margin: 15px 0 !important;
+	    padding: 0 15px;
+	}
+	.info-content >div:first-of-type {
+	    padding: 0;
+	}
+	.sign-form .form-group{
+		display: initial;
+	}
+	.sign-form .control-label{
+		float: none;
+	}
+	.index >div{
+		padding-left: 0;
+	}
+	.index >div:last-of-type{
+		padding-right: 10px;
+	}
+	.campus-box >div{
+		width: 22.5%;
+	}
+	.major1{
+		padding: 0 15px;
+	}
+	.tea-box >div{
+		float: left;
+		width: 48%;
+		margin: 25px 0px 10px;
+		padding: 0 1%;
+	}
+	.theme-list >div{
+		width: 100%;
+	}
+	.teacher-box{
+		width: 44%;
+	}
+}
+@media only screen and (max-width: 980px) {
+	
+}
+@media only screen and (max-width: 860px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+}
+@media only screen and (max-width: 680px) {
+	
+	
+}
+@media only screen and (max-width:620px){
+	.m-top a img{
+		width: 420px;
+	}
+	.dang p{
+		display: none;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.m-top a img{
+		width: 350px;
+	}
+	.m-nav-botton {
+	    margin-top: 30px;
+	}
+	
+}
+@media only screen and (max-width:500px){
+	
+	
+}
+@media only screen and (max-width: 480px) {
+	.m-top a img {
+	    margin: 10px 0px 10px 10px;
+	    width: 300px;
+	}
+	.m-logo img{
+		margin: 8px 15px;
+	}
+	.m-nav-botton{
+		width: 30px;
+		margin-top: 30px;
+	}
+	.content{
+		padding: 0;
+	}
+	.special-box >div >div >div{
+		padding: 0 5px;
+	}
+	.info-title h3{
+		font-size: 20px;
+	}
+	.m-logo span{
+		font-size: 22px;
+		padding: 8px 15px;
+	}
+	.major >div p{
+		font-size: 15px;
+	}
+	.footer-content {
+	    padding: 1% 0 7%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.m-nav i{
+		text-align: left;
+	}
+	.m-nav span{
+		padding-left: 10px;
+	}
+	.m-nav-botton{
+		margin-top: 25px;
+	}
+	.dang .h4{
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.m-nav span{
+		font-size: 15px !important;
+	}
+	.passageway >div img {
+	    padding: 8px 15px;
+	}
+}
+@media only screen and (max-width:384px){
+	.m-nav-botton {
+        width: 25px;
+    	margin-top: 28px;
+	}
+	.teacher-box >div p{
+		font-size: 14px;
+	}
+	.teacher-box >div span{
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.footer-content {
+	    padding: 1% 0 10%;
+	}
+	.m-logo span{
+		font-size: 20px;
+		padding: 6px 15px;
+	}
+	.passageway >div img {
+	    padding: 8px 0px 8px 15px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.m-top a img {
+	    width: 250px;
+	}
+	.m-logo img {
+	    margin: 5px 15px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+	.m-nav i{
+		font-size: 18px;
+	}
+	.m-nav span{
+		font-size: 14px;
+	}
+	.m-logo i {
+	    font-size: 24px;
+	    margin: 0 5px 0 10px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.m-top a img{
+		width: 230px;
+	}
+	.m-item-nav >div:nth-of-type(2) {
+	    margin: 0 .4% 10px;
+	}
+	.m-item-nav >div:nth-of-type(3) {
+	    width: 34.6%;
+	}
+	.info-title h3{
+		font-size: 18px;
+	}
+	.even-title span{
+		font-size: 16px;
+	}
+	.more span,.list-item p{
+		font-size: 14px;
+	}
+	.list-item span{
+		font-size: 13px;
+	}
+	.teacher-box{
+		width: 48%;
+		margin: 1%;
+	}
+	.m-logo i{
+		font-size: 22px;
+	}
+	.m-logo span{
+		font-size: 18px;
+		padding: 4px 15px;
+	}
+	.m-nav li{
+		margin: 0;
+	}
+	.passageway >div img {
+	    padding: 8px 0px 8px 6px;
+	}
+}

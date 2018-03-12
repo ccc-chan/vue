@@ -1,0 +1,268 @@
+@media only screen and (max-width: 1650px) {
+	
+}
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+	
+}
+@media only screen and (max-width: 1280px) {
+	
+	
+}
+@media only screen and (max-width: 1200px) {
+	.footer-content li {
+	    margin-left: 5%;
+	}
+	.item-nav > div{
+		width: 97%;
+	}	
+	.footer-content >div:first-of-type{
+		padding-left: 0;
+	}
+	.footer-content{
+		display: block;
+	}
+	.footer-item {
+	    margin: 0px;
+	}
+}
+@media only screen and (max-width: 1100px){
+}
+@media only screen and (max-width: 1024px) {
+
+	
+}
+@media only screen and (max-width: 991px){
+	.pc-bg,.pc-item-nav,.p-page {
+		display: none;
+	}
+	.m-bg,.footer-content,.footer-content >div:nth-of-type(2),.m-item-nav,.m-page{
+		display: block;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	footer{
+		height: auto;
+	}
+	.two>div,.three >div,.index > div,.index > div:first-of-type,.two-one >div:first-of-type,.two-one >div:nth-of-type(2),.two > div:nth-of-type(even),.width-6,.dyn-list >div{
+		width: 100%;
+		margin: 15px 0;
+	}
+	.dyn-list >div:nth-of-type(even){
+		margin-left: 0;
+	}
+	.five > div{
+		width: 49%;
+	}
+	.five > div:nth-of-type(even) {
+		margin-right: 0;
+	}
+	.three > div:nth-of-type(2), .three > div:nth-of-type(5),.index > div:nth-of-type(2){
+		margin: 15px 0;
+	}
+	.footer-content{
+		padding: 1% 0 8%;
+	}
+	.footer-content > div >div{
+		margin: 1% 0;
+	}
+	.footer-content > div{
+		margin-top: 1%;
+	}
+	.footer-content >div:nth-of-type(2) div{
+		border: 0;
+	}
+	.footer-content>div img{
+		margin: 10px auto;
+	}
+	.footer-content>div img:nth-of-type(3){
+		height: 1px;	
+	}	
+	.footer-content li{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	}
+	.news-box >div,.jiuye{
+		width: 100% !important;
+		margin: 10px 0 !important;
+	}
+	.banner{
+		margin-top: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.banner img{
+		width: 100%;
+	}
+	.news-box >div{
+		width: 100%;
+		margin-bottom:20px;
+	}
+	.info-content >div:first-of-type {
+	    padding: 0;
+	}
+	.sign-form .form-group{
+		display: initial;
+	}
+	.sign-form .control-label{
+		float: none;
+	}
+	.index >div{
+		padding-left: 0;
+	}
+	.index >div:last-of-type{
+		padding-right: 10px;
+	}
+	.footer-content >div:first-of-type{
+		padding-left: 15px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	
+}
+@media only screen and (max-width: 860px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+}
+@media only screen and (max-width: 680px) {
+	.teacher-box{
+		width: 44%;
+	}
+	
+}
+@media only screen and (max-width:620px){
+	.m-top a img{
+		width: 420px;
+	}
+	
+}
+@media only screen and (max-width: 580px) {
+	.m-top a img{
+		width: 350px;
+	}
+	.m-nav-botton {
+	    margin-top: 30px;
+	}
+	
+}
+@media only screen and (max-width:500px){
+	
+	
+}
+@media only screen and (max-width: 480px) {
+	.m-top a img {
+	    margin: 10px 0px 10px 10px;
+	    width: 300px;
+	}
+	.m-logo img{
+		margin: 8px 15px;
+		width: 120px;
+	}
+	.m-nav-botton{
+		width: 30px;
+		margin-top: 18px;
+	}
+	.content{
+		padding: 0;
+	}
+	.special-box >div >div >div{
+		padding: 0 5px;
+	}
+	.info-title h3{
+		font-size: 20px;
+	}
+	.major-box >div {
+	    padding: 0 3px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.m-nav i{
+		text-align: left;
+	}
+	.m-nav span{
+		padding-left: 10px;
+	}
+	.m-logo span{
+		font-size: 20px;
+	}
+	.major-box >div {
+	    padding: 0px;
+	}
+}
+@media only screen and (max-width:384px){
+	.m-nav-botton {
+        width: 25px;
+    	margin-top: 20px;
+	}
+	.teacher-box >div p{
+		font-size: 14px;
+	}
+	.teacher-box >div span{
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.footer-content {
+	    padding: 1% 0 15%;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.m-top a img {
+	    width: 250px;
+	}
+	.m-logo img {
+	    margin: 5px 15px;
+	}
+	.m-nav-botton{
+		margin-top: 16px;
+	}
+	.m-nav i{
+		font-size: 18px;
+	}
+	.m-nav span{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.m-top a img{
+		width: 230px;
+	}
+	.m-item-nav >div:nth-of-type(2) {
+	    margin: 0 .4% 10px;
+	}
+	.m-item-nav >div:nth-of-type(3) {
+	    width: 34.6%;
+	}
+	.m-logo span{
+		font-size: 18px;
+		padding: 5px 10px;
+	}
+	.info-title h3{
+		font-size: 18px;
+	}
+	.even-title span{
+		font-size: 16px;
+	}
+	.more span,.list-item p{
+		font-size: 14px;
+	}
+	.list-item span{
+		font-size: 13px;
+	}
+	.teacher-box{
+		width: 48%;
+		margin: 1%;
+	}
+}

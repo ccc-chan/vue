@@ -1,0 +1,49 @@
+extends layout
+
+block content
+
+    script(type="text/javascript" src='../zszt/js/enrollment_news.js')
+    script.
+        document.title = "招生简章_广西新闻出版技工学校招生专题网";
+        $.news('http://api.7171.la/api/article?token=xwcb&code=b3ebb144a7125704b9a9c0a7ae007039&type=168',3);
+
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.jpg')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='../zszt/images/bg10.png')
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='../zszt/images/bg11.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 招生简章
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/') 首页
+                    span >
+                    span
+                        a(href='/school_admission_brochure') 招生简章
+            div.col-md-12.col-xs-12
+                div.action-news-list
+                    span#none 资料正在整理中..
+
+                // fenye
+                nav#page.p-page(aria-label='Page navigation')
+                    ul.pagination
+                        li.prev
+                            a(href='#', aria-label='Previous')
+                                span(aria-hidden='true') 上一页
+                        li.jump
+                            a(href='#') 1
+                        li.next
+                            a(href='#', aria-label='Next')
+                                span(aria-hidden='true') 下一页
+                nav#page1.m-page(aria-label='...')
+                    ul.pager
+                        li.prev
+                            a(href='#') 上一页
+                        li.next
+                            a(href='#') 下一页

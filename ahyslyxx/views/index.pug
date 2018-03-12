@@ -1,0 +1,96 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.center
+        div.container
+            div.news-title.dyn-title
+                div
+                    i.iconfont.icon-xinwen
+                    span.h4 学校动态
+                div.more
+                    a(href='/ dynamics')
+                        span +more
+            div.dyn.two
+
+            script.
+                $(function () {
+                    $(".dyn-content span").dotdotdot();
+                });
+
+    div.container.center
+        div.two
+            div
+                div.news-title
+                    p
+                    div
+                        i.iconfont.icon-kecheng
+                        span.h4 专业建设
+                    div.more
+                        a(href='/sconstruction')
+                            span +more
+                .sc
+
+            div
+                div.news-title
+                    p
+                    div
+                        i.iconfont.icon-dangwugongkai
+                        span.h4 党团建设
+                    div.more
+                        a(href='/construction')
+                            span +more
+                .co
+
+    div.container.center
+        div.two
+            div
+                div.news-title
+                    p
+                    div
+                        i.iconfont.icon-gongwenbaokuai
+                        span.h4 就业实习
+                    div.more
+                        a(href='/employment')
+                            span +more
+                .shixi
+
+            div
+                div.news-title
+                    p
+                    div
+                        i.iconfont.icon-sangeren
+                        span.h4 师资队伍
+                    div.more
+                        a(href='/teacher')
+                            span +more
+                div.swiper-container.shizi
+                    div.swiper-wrapper
+                    .swiper-button-next.carousel-control.t-n
+                        i.iconfont.icon-right
+                    .swiper-button-prev.carousel-control.t-p
+                        i.iconfont.icon-back
+    div.center
+        div.container
+            div.news-title.dyn-title
+                div
+                    i.iconfont.icon-daxue
+                    span.h4 校园环境
+                div.more
+                    a(href='')
+                        span +more
+            div.row.campus
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+    div.center.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')

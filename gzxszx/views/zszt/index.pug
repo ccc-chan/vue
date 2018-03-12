@@ -1,0 +1,138 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/index.js')
+    .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
+        .modal-dialog.modal-sm(role='document')
+            .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                h3.modal-title.text-center 录取查询
+            .modal-content
+                form
+                    .form-group
+                        label(for='exampleInputEmail1') 考生名字：
+                        input#exampleInputEmail1.form-control(type='text', placeholder='请输入你的名字')
+                    .form-group
+                        div
+                            label 身份证号 :
+                            i#identity 请输入合法身份证！
+                        input.form-control.identity(type='text', placeholder='请输入你的身份证号')
+                    .form-group
+                        label 准考证号 :
+                        input.form-control(type='text', placeholder='请输入你的准考证号 ')
+            .modal-footer
+                button#btn.btn.btn-primary(type='button') 点击查询
+    .kefu(data='close')
+        div.kefu-left
+            img(src='../zszt/images/bg16.png')
+        div.kefu-right
+            div
+                label.text-center QQ在线咨询
+                span 客服1
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2586638391&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 客服2
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2586719492&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 招生热线：
+                div
+                    span 0851-22521485
+    div.background
+        div.center.container.banner
+            img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+            img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+        .container.center.three
+            .col-xs-12
+                .passageway
+                    div
+                        a(href='/zszt/sign')
+                            img(src='../zszt/images/bg1.png')
+                            span 在线报名
+                    div
+                        a(data-toggle='modal', data-target='.bs-example-modal-sm', style='cursor: pointer;')
+                            img(src='../zszt/images/bg2.png')
+                            span 录取查询
+                    div
+                        a(href='/zszt/brochure')
+                            img(src='../zszt/images/bg3.png')
+                            span 招生简章
+                    div
+                        a(target='_blank', href='http://wpa.qq.com/msgrd?v=3&uin=1413667535&site=qq&menu=yes')
+                            img(src='../zszt/images/bg4.png')
+                            span 新生答疑
+            .shadow
+                .news-title
+                    div
+                        p
+                        span 招生快讯
+                    .more
+                        a(href='/zszt/news')
+                            span 更多
+                .news-box.enrollmentList
+
+            .shadow
+                .news-title
+                    div
+                        p
+                        span 招生政策
+                    .more
+                        a(href='/admission_policy')
+                            span 更多
+                .news-box.polickList
+
+        .container.center
+            .major1
+                .shadow
+                    .news-title
+                        div
+                            p
+                            span 特色专业
+                        .more
+                            a(href='/zszt/computer')
+                                span 更多
+                    .major
+                        .col-md-3.col-xs-6
+                            a(href='/zszt/computer')
+                                img.img-responsive(src='../zszt/images/bg5.png')
+                                span 计算机应用
+                                p PHP开发工程师方向
+                        .col-md-3.col-xs-6
+                            a(href='/zszt/computer1')
+                                img.img-responsive(src='../zszt/images/bg6.png')
+                                span 计算机应用
+                                p 前端开发工程师方向
+                        .col-md-3.col-xs-6
+                            a(href='/zszt/computer2')
+                                img.img-responsive(src='../zszt/images/bg7.png')
+                                span 计算机应用
+                                p 计算机网络技术方向
+                        .col-md-3.col-xs-6
+                            a(href='/special_major_artdesign1')
+                                img.img-responsive(src='../zszt/images/bg8.png')
+                                span 计算机平面设计
+                                p 平面设计方向
+                        .col-md-3.col-xs-6
+                            a(href='/special_major_computer')
+                                img.img-responsive(src='../zszt/images/bg9.png')
+                                span 计算机平面设计
+                                p 网页电商设计方向
+                        .col-md-3.col-xs-6
+                            a(href='/special_major_computer1')
+                                img.img-responsive(src='../zszt/images/bg10.png')
+                                span 电子商务
+                                p 软件技术方向
+                        .col-md-3.col-xs-6
+                            a(href='/special_major_computer')
+                                img.img-responsive(src='../zszt/images/bg9.png')
+                                span 电子商务
+                                p 网站开发工程师方向
+                        .col-md-3.col-xs-6
+                            a(href='/special_major_computer1')
+                                img.img-responsive(src='../zszt/images/bg10.png')
+                                span 电子商务
+                                p 软件技术与信息服务方向
+        div.center.banner-bottom
+            img.img-responsive.pc-bg(src='../zszt/images/banner1.png')
+            img.img-responsive.m-bg(src='../zszt/images/m-banner1.png')
+

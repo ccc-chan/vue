@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/news.js')
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.jpg')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='../zszt/images/bg10.png')
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='../zszt/images/bg11.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 招生快讯
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/zszt') 首页
+                    span >
+                    span
+                        a(href='/zszt/brochure') 招生简章
+            div.news
+                span.h3
+                div.news-info
+                    span
+                div.page

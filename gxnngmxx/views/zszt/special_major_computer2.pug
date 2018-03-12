@@ -1,0 +1,91 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/accouting.js')
+    script.
+        document.title="计算机应用技术（PHP开发工程师方向）_南宁市工贸职业技术学校招生专题网";
+        $.get('http://api.7171.la/api/profession?token=nngmzyjs&code=29bba53d88f45fb95ea3c9a54a31f6ac&type=135');
+
+
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg
+            .item-nav
+                .item-nav-title
+                    span.text-center 专业设置
+                div
+                    a(href='/zszt/accouting')
+                        span.h4 会计
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 会计信息化方向
+                div
+                    a(href='/zszt/accouting1')
+                        span.h4 会计
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 互联网金融方向
+                div
+                    a(href='/zszt/accouting2')
+                        span.h4 会计
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 投资与理财方向
+                div
+                    a(href='/zszt/computer')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 计算机网络技术方向
+                div
+                    a(href='/zszt/computer1')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 计算机平面设计方向
+                div.active
+                    a(href='/zszt/computer2')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | PHP开发工程师方向
+
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='../zszt/images/bg7.png')
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='../zszt/images/bg8.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 计算机应用技术（PHP开发工程师方向）
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/zszt') 首页
+                    span >
+                    span
+                        a(href='/zszt/computer2') 计算机应用技术（PHP开发工程师方向）
+            div.special-box
+                div
+                    div.special.target
+                        i.iconfont.icon-mubiao
+                        span 培养目标
+                    span#train
+                    .pic-box
+                        div.col-xs-4
+                            img.img-responsive#img1
+                        div.col-xs-4
+                            img.img-responsive#img2
+                        div.col-xs-4
+                            img.img-responsive#img3
+                div
+                    div.special.course
+                        i.iconfont.icon-shu
+                        span 主要课程
+                    span#course
+                div
+                    div.special.area
+                        i.iconfont.icon-zhongqingdianxinicon05
+                        span 就业领域
+                    span#area

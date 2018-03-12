@@ -1,0 +1,85 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/accouting.js')
+    script.
+        document.title="计算机应用技术（PHP开发工程师方向）_贵州息烽县中等职业学校特色专业网";
+        $.get('http://api.7171.la/api/profession?token=gzxfxzd&code=7e10c5149c321e09a7620fc547e47618&type=108');
+
+
+    div.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.jpg')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg.row
+            .item-nav
+                .item-nav-title
+                    span.text-center 专业设置
+                div
+                    a(href='/zszt/artdesign')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 平面设计方向
+                div
+                    a(href='/zszt/artdesign1')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 网页电商设计方向
+                div
+                    a(href='/zszt/artdesign2')
+                        span.h4 电子商务
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 广告设计方向
+                div
+                    a(href='/zszt/computer')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 网站开发工程师方向
+                div
+                    a(href='/zszt/computer')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | 前端开发工程师方向
+                div.active
+                    a(href='/zszt/computer2')
+                        span.h4 计算机应用技术
+                        span.h4
+                            i.iconfont.icon-triangle-copy-copy-copy
+                            | PHP开发工程师方向
+
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='../zszt/images/bg10.png')
+                a(href='/zszt/artdesign')
+                    img.img-responsive(src='../zszt/images/bg11.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 计算机应用技术（PHP开发工程师方向）
+            div.special-box
+                div
+                    div.special.target
+                        i.iconfont.icon-mubiao
+                        span 培养目标
+                    span#train
+                    .pic-box
+                        div.col-xs-4
+                            img.img-responsive#img1
+                        div.col-xs-4
+                            img.img-responsive#img2
+                        div.col-xs-4
+                            img.img-responsive#img3
+                div
+                    div.special.course
+                        i.iconfont.icon-shu
+                        span 主要课程
+                    span#course
+                div
+                    div.special.area
+                        i.iconfont.icon-zhongqingdianxinicon05
+                        span 就业领域
+                    span#area

@@ -1,0 +1,578 @@
+@media only screen and (max-width: 1650px) {
+	
+}
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+	
+}
+@media only screen and (max-width: 1280px) {
+	.pc_top .container{
+		width: 100%;
+	}
+	.pc_top .logo img{
+		width: 500px;
+		margin: 33px 0;
+	}
+	.news-title p{
+		margin-bottom: 0;
+	}
+	.teacher-box >div{
+		padding: 0 7px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.news-title p{
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	.theme-list >div >div:nth-of-type(2){
+		padding: 0;
+	}
+	.enterprise{
+		width: 100%;
+		margin: 0 ;
+	}
+	.teacher-info{
+		height: 78px;
+	}
+	.teacher-info p{
+		line-height: 22px;
+	}
+	.footer-content li {
+	    margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 1100px){
+	.news-box{
+		margin: 8px 0;
+	}
+	.date{
+		height: 78px;
+	}
+	.date h3{
+		padding: 9px 0;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.pc_top .logo img{
+		width: 450px;
+		margin: 40px 0;
+	}
+	.top_info span{
+		font-size: 14px;
+	}
+	.top_info i{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.pc_nav .container{
+		width: 90%;
+	}
+	.box2>div{
+		width: 100%;
+		margin: 10px auto;
+	}
+	.bg-box >div {
+	    width: 26%;
+	    margin: 2%;
+	}
+	.bg-box >div:nth-of-type(4){
+		margin-left: 20%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.pc_top,.pc_nav,.pc-bg,.device .swiper-button-next, .device .swiper-button-prev,.pc-item-nav,.bread-nav,.theme-list p,.p-page,.info-nav{
+		display: none;
+	}
+	.m-top,.m-logo,.m-bg,.footer-content,.footer-content >div:nth-of-type(2),.m-item-nav,.m-page,.teacher-nav,.target-carousel-box{
+		display: block;
+	}
+	.info,.m-item-nav{
+		border: 0;
+	}
+	.info{
+		padding: 0
+	}
+	footer{
+		height: auto;
+	}
+	.footer-content{
+		padding: 1% 0 4%;
+	}
+	.footer-content > div,.footer-content > div >div{
+		margin: 1% 0;
+	}
+	.footer-content >div:nth-of-type(2) div{
+		border: 0;
+	}
+	.footer-content>div img{
+		margin: 10px auto;
+	}
+	.footer-content>div img:nth-of-type(3){
+		height: 1px;	
+	}	
+	.footer-content li{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	}
+	.info-content > div:first-of-type{
+		padding: 0;
+	}
+	.device{
+		width: 100%;
+		margin-top: 0;
+	}
+	.banner{
+		margin-top: 0;
+		padding: 0;
+	    width: 100%;
+	}
+	.tl-title .h4{
+		width: 100%;
+	}
+	.tl-title span:nth-of-type(2){
+		float: left;
+	}
+	.news .h3 {
+	    width: 100%;
+	    text-align: left;
+	    font-size: 19px;
+	    text-indent: 0;
+	    margin: 0;
+	}
+	.news-info{
+		display: initial;
+	}
+	.news-info span:nth-of-type(2){
+		float: right;
+	}
+	.major-nav{
+		border: 0;
+	}
+	.major-nav li{
+		margin: 5px;
+	}
+	.major-nav span{
+		width: 118px;
+		text-align: center;
+	}
+	.major-nav>ul {
+	    width: 100%;
+	     margin: 0; 
+	}
+	.coop-box img{
+		margin: 10px 0;
+	}
+	.pic-box1 >div,.link >div{
+		width: 48%;
+		margin: 1%;
+	}
+	.link >div:nth-of-type(2), .link >div:nth-of-type(3), .link >div:nth-of-type(4){
+		margin-left: 1%;
+	}
+	.link >div img{
+		margin: 0 auto;
+	}
+	.box2 > div:nth-of-type(even){
+		margin: 0;
+	}
+	.box2{
+		padding: 0 15px;
+	}
+	.box1 >div{
+		padding: 0;
+	}
+	.teacher-nav{
+		padding-left: 0;
+	}
+	.contacr-address label{
+		display: block;
+		text-align: center;
+		border: 0;
+	}
+	.date{
+		height: 72px;
+	}
+	.date h3{
+		padding: 7px 0;
+	}
+	.teacher-box >div{
+		padding: 0 15px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.pc_nav ul li {
+	    margin-right: 1%;
+	}
+}
+@media only screen and (max-width: 860px) {
+	.pc_nav .container{
+		width: 98%;
+	}
+	.pc_nav a {
+	    font-size: 15px;
+	}
+	.news-title p{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+	
+	.device{
+		padding: 0;
+		margin-top: 0;
+	}
+	.carousel >a {
+		display: none;
+	}
+	.news-title p{
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+	.news-title span{
+		height: 50px;
+	}
+	.box1{
+		border: 0;
+	}
+	.bg-box >div {
+	    width: 30%;
+	    margin: 1.5%;
+	}
+	.pic-box1 >div{
+		width: 49%;
+		margin: 2% 0;
+	}
+	.pic-box1 >div:nth-of-type(even){
+		margin-left: 1%;
+	}
+	.tl-title .h4{
+		/*overflow: auto;*/
+	    text-overflow: clip;
+	    white-space: pre-wrap;
+	    margin: 0;
+	}
+	.action-news-list >div{
+		overflow: hidden;
+	}
+	.action-news-list >div i{
+		float: left;
+	}
+	.action-news-list >div p{
+		float: left;
+		width: calc(100% - 20px);
+		margin-left: 4px;
+		margin-top: 2px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.action-news-list >div span{
+		display: block;
+		margin-left: 20px;
+		float: left;
+		text-indent: 0;
+	}
+	.enterprise{
+		width: 90%;
+		margin: 0 5%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.enter-left,.enter-right{
+		position: inherit;	
+		margin: 5px 0;
+	}
+	.enter-right img{
+		width: 100%;
+	}
+	.coop-box a{
+		padding: 5px 2px;
+		border: 1px solid #134094;
+	}
+}
+@media only screen and (max-width: 680px) {
+	.news-title span{
+		display: none;
+	}
+	.news-title p{
+		margin: 10px 15px;
+	}
+	.content-title h3{
+		font-size: 20px;
+	}
+	
+}
+@media only screen and (max-width:620px){
+	.m-top a img{
+		width: 420px;
+	}
+	.enterprise{
+		width: 100%;
+		margin: 0;
+	}
+	.pagination div:first-of-type h5{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.pagination div:first-of-type{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.m-top a img{
+		width: 350px;
+	}
+	.m-nav-botton {
+	    margin-top: 30px;
+	}
+	.major-nav li{
+		margin: 5px 1px;
+	}
+	.enter-left img {
+	    margin: 20px auto 10px;
+	}
+	.news img{
+		width:100%;
+	}
+}
+@media only screen and (max-width:500px){
+	.enter-left img {
+	    margin: 20px auto 10px;
+	    width: 80px;
+	}
+	.enter-left p {
+	    font-size: 14px;
+	}
+	.enter-left i{
+		margin: 5px 25%;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	.teacher-nav i{
+		display: none;
+	}
+	.m-top a img {
+	    margin: 15px 0px 15px 10px;
+	    width: 300px;
+	}
+	.m-logo img{
+		margin: 8px 15px;
+	}
+	.m-nav-botton{
+		width: 30px;
+		margin-top: 30px;
+	}
+	.news-title p {
+	    margin: 10px 0px;
+	}
+	.pic-shadow span{
+		font-size:14px ;
+	}
+	.footer-content {
+	    padding: 1% 0 8%;
+	}
+	.footer-content li{
+		margin: 0;
+	}
+	.tl-title .h4{
+		line-height: 20px;
+		font-size: 15px;
+	}
+	.info-title h4{
+		font-size: 21px;
+	}
+	.news .h3{
+		font-size: 17px;
+	}
+	.enter-right,.enter-left{
+		padding-left: 0;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.pic-shadow span{
+		padding: 5px 0;
+	}
+	.bg-box>div span{
+	    font-size: 14px;
+    	padding: 2px 0;
+	}
+	.m-nav i{
+		text-align: left;
+	}
+	.m-nav span{
+		padding-left: 10px;
+	}
+	.tl-title .h4{
+	    line-height: 16px;
+	}
+	.info-title h4{
+		font-size: 20px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+}
+@media only screen and (max-width:384px){
+	.m-nav-botton {
+        width: 25px;
+    	margin-top: 28px;
+	}
+	.teacher-info span{
+		display: inline;
+	}
+	.teacher-info .m-bg span{
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.news-title p {
+	    margin: 0px 0px;
+	}
+	.footer-content {
+	    padding: 1% 0 15%;
+	}
+	.tl-title span:nth-of-type(2){
+		line-height: 15px;
+	}
+	.info-title h4 {
+	    font-size: 18px;
+	}	
+	.theme-list >div > div{
+		padding-left: 0;
+	}
+	.news-info span{
+		margin: 5px;
+	}
+	.major-nav span{
+		font-size: 12px;
+		width: 110px;
+	}
+	.device .pagination span{
+	    margin: 10px 1px;
+	}
+	.name{
+		font-size: 14px !important;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.m-top a img {
+	    width: 250px;
+	}
+	.m-logo img {
+	    margin: 5px 15px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+	.m-nav i{
+		font-size: 18px;
+	}
+	.m-nav span{
+		font-size: 14px;
+	}
+	.tl-title .h4 {
+	    height: 35px;
+        line-height: 16px;
+		font-size: 14px;
+	}
+	.major-nav li {
+	    margin: 5px 25px;
+	}
+	.date{
+		height: 60px;
+		width: 70px;
+	}
+	.date h3 {
+	    padding: 5px 0 3px;
+	    font-size: 20px;
+	}
+	.news-title p{
+		font-size: 15px;
+	}
+	.coop-box>div{
+		padding: 0 5px;
+	}
+	.coop-box>div>div{
+		padding: 0 5px;
+		font-size: 14px;
+	}
+	.name {
+    	font-size: 12px !important;
+    }	
+}
+@media only screen and (max-width: 320px) {
+	.m-top a img{
+		width: 230px;
+	}
+	.news-title p{
+		font-size: 15px;
+	}
+	.date h3{
+		font-size: 20px;
+	}
+	.date span{
+		font-size: 12px;
+	}
+	.pic-shadow span{
+		padding: 2px 0;
+		font-size: 12px;
+	}
+	.bg-box>div span {
+	    font-size: 12px;
+	    padding: 1px 0;
+	}
+	.tl-title span:nth-of-type(2),.tl-title .h4{
+		font-size: 13px;
+	}
+	.m-item-nav span{
+	    padding: 7px;
+    	font-size: 13px;
+	}
+	.tl-title .h4{
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    height: auto;
+	}
+	.news-info span {
+	    margin: 5px 0;
+	    font-size: 12px;
+	}
+	.info-box > div >div span{
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	.major-nav li {
+	    margin: 5px 15px;
+	}
+	.teacher-nav a,.enter-right p{
+		font-size: 12px;
+	}
+	.news-title{
+		padding-left: 10px;
+	}
+	.date {
+	    width: 65px;
+	}
+	.news-title p{
+		font-size: 14px;
+	}
+	.coop-box a{
+		font-size: 14px;
+	}
+	.teacher-box >div {
+	    padding: 0 5px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+}

@@ -1,0 +1,88 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    div.container.center.banner
+        div.swiper-container.lunbo
+            div.swiper-wrapper
+            .swiper-button-next.carousel-control.t-n.pc-bg
+                i.iconfont.icon-right
+            .swiper-button-prev.carousel-control.t-p.pc-bg
+                i.iconfont.icon-back
+            div.pagination
+                div
+                    h5
+                div.index
+    div.center.gray
+        div.container
+            .two
+                div
+                    div.news-title.dyn-title
+                        div
+                            span.h4 学校动态
+                        div.more
+                            a(href='/dynamics')
+                                span 更多 >>
+                    div.dyn
+                        //157*93
+                div
+                    div.news-title
+                        div
+                            span.h4 专业建设
+                        div.more
+                            a(href='/sconstruction')
+                                span 更多 >>
+                    .sc
+    div.container.center
+        div.three
+            div
+                div.news-title
+                    div
+                        span.h4 党团建设
+                    div.more
+                        a(href='/construction')
+                            span 更多 >>
+                .co
+
+            div
+                div.news-title
+                    div
+                        span.h4 就业实习
+                    div.more
+                        a(href='/employment')
+                            span 更多 >>
+                .shixi
+
+            div
+                div.news-title
+                    div
+                        span.h4 师资队伍
+                    div.more
+                        a(href='/teacher')
+                            span 更多 >>
+                div.swiper-container.shizi
+                    div.swiper-wrapper
+                    .swiper-button-next.carousel-control.t-n
+                        i.iconfont.icon-right
+                    .swiper-button-prev.carousel-control.t-p
+                        i.iconfont.icon-back
+    div.center.gray
+        div.container
+            div.news-title.campus-title
+                div
+                    span.h4 校园环境
+                div.more
+                    a(href='javascript:void(0);')
+                        span 更多 >>
+            div.row.campus
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/2.png')
+    div.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')

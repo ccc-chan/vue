@@ -1,0 +1,73 @@
+footer{
+    width: 100%;
+    height: 205px;
+    position: relative;
+    background: #e7e8e8;
+    border-top: 1px solid #187356;
+}
+.footer-content{
+    padding: 2% 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.footer-content li,footer span{
+    color: #404040;
+}
+.footer-content li{
+    margin-left: 10%;
+}
+.footer-content li a{
+    color: #007e40;
+}
+footer span{
+    display: block;
+}
+.footer-content>div >div img{
+    display: block;
+    margin: 5px auto;
+}
+.footer-content >div:nth-of-type(2){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+.qcore-box span{
+    font-size: 12px;
+}
+.footer-content >div:nth-of-type(2) div{
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+}
+.footer-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background:#008e70;
+}
+.footer-bottom span{
+    padding: 5px;
+    color: #99d0c4;
+}
+.footer-right{
+    padding: 0;
+}

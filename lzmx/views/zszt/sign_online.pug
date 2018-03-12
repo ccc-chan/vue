@@ -1,0 +1,120 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/gVerify.js')
+    script(type="text/javascript" src='../zszt/js/sign_online.js')
+
+    div.center.container.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+    div.container.center
+        div.sign
+            div.info-title
+                h3 报名信息填写
+            div.col-xs-12.content
+                form.form-horizontal.sign-form
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 姓名：
+                        div.col-md-5.col-xs-12
+                            input.form-control.name(type='text' placeholder="请输入姓名")
+                        div.col-md-5.col-xs-12
+                            span#name
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 性别：
+                        div.col-md-5.col-xs-12
+                            div.choose
+                                label.radio.sex 男
+                                    input(type='radio' value='1' name='sex' )
+                                    i
+                                label.radio.sex 女
+                                    input(type='radio' value='2' name='sex' )
+                                    i
+                        div.col-md-5.col-xs-12
+                            span#sex
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 联系电话：：
+                        div.col-md-5.col-xs-12
+                            input.form-control.telephone(type='text' placeholder="手机号码、固定号码均可")
+                        div.col-md-5.col-xs-12
+                            span#telephone （固定电话请加区号,如“0711-1234567”）
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 毕业学校：
+                        div.col-md-5.col-xs-12
+                            input.form-control.school(type='text' placeholder="请输入毕业学校 ")
+                        div.col-md-5.col-xs-12
+                            span#school （毕业学校名称）
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 文化程度：
+                        div.col-md-5.col-xs-12
+                            div.choose
+                                label.radio.record 初中
+                                    input(type='radio' value='1' name='record' )
+                                    i
+                                label.radio.record 高中
+                                    input(type='radio' value='2' name='record' )
+                                    i
+                                label.radio.record 技校
+                                    input(type='radio' value='3' name='record' )
+                                    i
+                        div.col-md-5.col-xs-12
+                            span#record
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label QQ号码：
+                        div.col-md-5.col-xs-12
+                            input.form-control.qq(type='text' placeholder="")
+                        div.col-md-5.col-xs-12
+                            span （留下QQ，方便咨询）
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label.wechat 微信号：
+                        div.col-md-5.col-xs-12
+                            input.form-control(type='text' placeholder="")
+                        div.col-md-5.col-xs-12
+                            span （随时联系更便捷）
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label 家庭住址：
+                        div.col-md-5.col-xs-12
+                            input.form-control.address(type='text' placeholder="请输入家庭住址")
+                        div.col-md-5.col-xs-12
+                            span （请填写现住的详细地址，方便邮寄录取通知书）
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                            label.control-label
+                                i *
+                                | 验证码：
+                        div.col-md-5.col-xs-12.yanzheng
+                            input.form-control.qcore(type='text' style="width: 50%;float: left;")
+                            div#v_container
+                        div.col-md-5.col-xs-12
+                            span 看不清  点击图片换一张
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                        div.col-md-7.col-xs-12.tip
+                            span 注：带
+                                i *
+                                | 号为必填项，填写完毕后请按“提交”按钮
+                        div.col-md-3.col-xs-12
+                            span
+                    div.form-group
+                        div.col-md-2.col-xs-12
+                        div.col-md-5.col-xs-12.tip
+                            button.btn(type='button') 提交
+                        div.col-md-5.col-xs-12
+                            span

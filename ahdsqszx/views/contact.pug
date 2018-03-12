@@ -1,0 +1,153 @@
+extends layout
+
+block content
+    script.
+        $(function () {
+            document.title = "联系我们_安徽砀山秋实职业技术学校特色专业网";
+        });
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg7.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg8.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 联系我们
+                div.col-md-12.col-xs-12
+                    div#allmap.baidu-map(style='width:100%;height:550px;')
+                    div.row
+                        div.col-md-3.col-xs-12
+                            div.contact-box
+                                //
+                                img(src='offical/images/contact1.png')
+                                label.text-center 学院地址
+                                span.text-center 红桥新区政府后侧
+                        div.col-md-3.col-xs-12
+                            div.contact-box
+                                //div.contact-img2
+                                img(src='offical/images/contact2.png')
+                                label.text-center 联系电话
+                                span.text-center 0858-6664523<br/>0858-6664548
+                        div.col-md-3.col-xs-12
+                            div.contact-box
+                                //div.contact-img3
+                                img(src='offical/images/contact3.png')
+                                label.text-center 在线咨询
+                                span.text-center 2586325613<br/>2586616217
+                        div.col-md-3.col-xs-12
+                            div.contact-box
+                                //div.contact-img4
+                                img(src='offical/images/contact4.png')
+                                label.text-center 新生交流群
+                                span.text-center 435733907<br/>436897148
+                    div.contact-address
+                        label 交通指南：
+                        span 乘14路公交车（火车站→双水）到汽贸城站下车即可
+    script.
+        var map = new BMap.Map("allmap", {enableMapClick: true});
+        map.centerAndZoom(new BMap.Point(104.798356,26.612652), 16);
+        // 添加地图类型控件
+        map.addControl(new BMap.MapTypeControl());
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+        var ctrl_nav = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+        var markerArr = [{
+            title: "六盘水市钟山区职业技术学校",
+            content: "地址：红桥新区政府后侧",
+            point: "104.798356|26.612652",
+            isOpen: 1,
+            icon: {w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5}
+        }
+        ];
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {icon: iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+        //创建InfoWindow
+        function createInfoWindow(i) {
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+            return iw;
+        }
+        //创建一个Icon
+        function createIcon(json) {
+            //var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+            //return icon;
+        }
+    style.
+        .iw_poi_title {
+            color: #CC5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word
+        }
+        .baidu-map{
+            margin:30px 0;
+        }
+        .baidu-map .center {
+            margin: 0 auto;
+            width: 252px !important;
+        }
+
+        .baidu-map .pop .bottom {
+            height: 25px !important;
+        }

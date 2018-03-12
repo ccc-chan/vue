@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/teacher.js')
+    script.
+        $(function () {
+            document.title="师资队伍_黄山当代职业学校特色专业网";
+        });
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg.row
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg1.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg2.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 师资队伍
+            div.teacher-title
+                span 学校拥有一支师德高尚、结构合理的双师型精英师资队伍，相关专业老师均具丰富的企业有一线工作经验和专业研发教学经验。
+                span 教师队伍深耕教学，独特的教学方法，让学生在体验中学习，在项目实践中创新，在创新中发展，高效的推动学校的教育事业。
+            div.teacher

@@ -1,0 +1,222 @@
+@media only screen and (max-width: 1650px) {
+	
+}
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+	
+}
+@media only screen and (max-width: 1280px) {
+	
+	
+}
+@media only screen and (max-width: 1200px) {
+	.footer-content li {
+	    margin-left: 5%;
+	}
+	.item-nav > div{
+		width: 97%;
+	}	
+	.second-nav{
+		width: 106px !important;
+	}
+}
+@media only screen and (max-width: 1100px){
+	.passageway img{
+		margin-left: 10px;
+	}
+	.passageway >div div{
+		left: 97px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+
+	
+}
+@media only screen and (max-width: 991px){
+	.pc-bg,.pc-item-nav {
+		display: none;
+	}
+	.m-bg,.footer-content,.footer-content >div:nth-of-type(2),.m-item-nav{
+		display: block;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	footer{
+		height: auto;
+	}
+	.footer-content{
+		padding: 1% 0 4%;
+	}
+	.footer-content > div,.footer-content > div >div{
+		margin: 1% 0;
+	}
+	.footer-content >div:nth-of-type(2) div{
+		border: 0;
+	}
+	.footer-content>div img{
+		margin: 10px auto 0;
+	}
+	.footer-content>div img:nth-of-type(3){
+		height: 1px;	
+	}	
+	.footer-content li{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	}
+	.news-box >div{
+		width: 100% !important;
+		margin: 10px 0 !important;
+	}
+	.banner{
+		margin-top: 0;
+		padding: 0;
+	}
+	.info-content >div:first-of-type {
+	    padding: 0;
+	}
+	.sign-form .form-group{
+		display: initial;
+	}
+	.sign-form .control-label{
+		float: none;
+	}
+}
+@media only screen and (max-width: 980px) {
+	
+}
+@media only screen and (max-width: 860px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+	
+}
+@media only screen and (max-width: 768px) {
+	
+}
+@media only screen and (max-width: 680px) {
+	
+	
+}
+@media only screen and (max-width:620px){
+	.m-top a img{
+		width: 420px;
+	}
+	
+}
+@media only screen and (max-width: 580px) {
+	.m-top a img{
+		width: 350px;
+	}
+	.m-nav-botton {
+	    margin-top: 30px;
+	}
+	.list-item p{
+		word-break:keep-all;           /* 不换行 */
+		white-space:nowrap;          /* 不换行 */
+		overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+		text-overflow:ellipsis;         /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+		width: 70%;
+	}
+}
+@media only screen and (max-width:500px){
+	
+	
+}
+@media only screen and (max-width: 480px) {
+	.m-top a img {
+	    margin: 15px 0px 15px 10px;
+	    width: 300px;
+	}
+	.m-logo img{
+		margin: 8px 15px;
+	}
+	.m-nav-botton{
+		width: 30px;
+		margin-top: 30px;
+	}
+	.content{
+		padding: 0;
+	}
+	.special-box >div >div >div{
+		padding: 0 5px;
+	}
+	.info-title h3{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.m-nav i{
+		text-align: left;
+	}
+	.m-nav span{
+		padding-left: 10px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+	.footer-content {
+	    padding: 1% 0 12%;
+	}
+	
+}
+@media only screen and (max-width:384px){
+	.m-nav-botton {
+        width: 25px;
+    	margin-top: 28px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.footer-content {
+	    padding: 1% 0 15%;
+	}
+	.list-item p{
+		width: 65%;
+	}
+	.list-item span{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.m-top a img {
+	    width: 250px;
+	}
+	.m-logo img {
+	    margin: 5px 15px;
+	}
+	.m-nav-botton{
+		margin-top: 23px;
+	}
+	.m-nav i{
+		font-size: 18px;
+	}
+	.m-nav span{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.m-top a img{
+		width: 230px;
+	}
+	.m-item-nav >div:nth-of-type(2) {
+	    margin: 0 .4% 10px;
+	}
+	.m-item-nav >div:nth-of-type(3) {
+	    width: 34.6%;
+	}
+	.info-title h3{
+		font-size: 18px;
+	}
+	.list-item p{
+		width: 60%;
+	}
+	.list-item span{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,102 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.jpg')
+    div.center.gray
+        div.container
+            div.news-title
+                div
+                    i.iconfont.icon-xinwenzixun
+                    span.h4 学校动态
+                div.more
+                    a(href='/dynamics')
+                        span 查看更多
+                        i.iconfont.icon-jiahao1
+            div.two.dyn
+                //145*118
+
+
+    div.center.white
+        div.container
+            div.three
+                div.co
+                    div.news-title
+                        div
+                            i.iconfont.icon-xinrenkecheng
+                            span.h4 专业建设
+                        div.more
+                            a(href='/sconstruction')
+                                span 查看更多
+                                i.iconfont.icon-jiahao1
+
+
+                div.dang
+                    div.news-title
+                        div
+                            i.iconfont.icon-dangjian
+                            span.h4 党团建设
+                        div.more
+                            a(href='/construction')
+                                span 查看更多
+                                i.iconfont.icon-jiahao1
+                div.shixi
+                    div.news-title
+                        div
+                            i.iconfont.icon-gongwenbao
+                            span.h4 就业实习
+                        div.more
+                            a(href='/employment')
+                                span 查看更多
+                                i.iconfont.icon-jiahao1
+    div.center.gray
+        div.container
+            div.news-title.campus-title
+                div
+                    i.iconfont.icon-daxue
+                    span.h4 校园环境
+                div.more
+                    a(href='javascript:void(0);' class='thumb')
+                        span 查看更多
+                        i.iconfont.icon-jiahao1
+            div.row.campus.campus-box
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg6.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg7.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg8.png')
+                div.col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg9.png')
+    div.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')
+
+    .mask
+        div
+            .swiper-container.gallery-top.big
+                .swiper-wrapper
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic1.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic2.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic3.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic4.jpg')
+                .swiper-button-next.carousel-control.g-n
+                .swiper-button-prev.carousel-control.g-p
+            .swiper-container.gallery-thumbs
+                .swiper-wrapper
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb1.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb2.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb3.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb4.png')
+
+

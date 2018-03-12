@@ -1,0 +1,131 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    .container.center
+        .new
+            .center
+                .col-md-7.col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-xinwenzixun
+                            span.h4 学院动态
+                        .more
+                            a(href='/dynamics')
+                                i.iconfont.icon-jia
+                    .news-box
+                        .col-md-6.col-xs-12
+                            .device
+                                .swiper-container.lunbo
+                                    .swiper-wrapper
+                                    .pagination
+                                        h5
+                        .col-md-6.col-xs-12.dyn(style='margin-bottom: 0;')
+
+                .col-md-5.col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-xinrenkecheng
+                            span.h4 专业建设
+                        .more
+                            a(href='/sconstruction')
+                                i.iconfont.icon-jia
+                    .news-box
+                        .col-xs-12.sc
+
+            .center
+                .col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-dangjian
+                            span.h4 党团建设
+                        .more
+                            a(href='/construction')
+                                i.iconfont.icon-jia
+                    .theme-list.co.dang.news-box
+
+            .center
+                .col-md-7.col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-tuandui
+                            span.h4 师资队伍
+                        .more
+                            a(href='/teacher')
+                                i.iconfont.icon-jia
+                    .tea-box
+
+                .col-md-5.col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-xinrenkecheng
+                            span.h4 就业实习
+                        .more
+                            a(href='/employment')
+                                i.iconfont.icon-jia
+                    .news-box
+                        .col-xs-12.shixi
+            .center
+                .col-xs-12
+                    .news-title
+                        p
+                        div
+                            i.iconfont.icon-daxue
+                            span.h4 校园环境
+                        .more.thumb
+                            i.iconfont.icon-jia
+                    .campus-box.news-box
+                        div
+                            img.img-responsive(src='offical/images/bg6.png')
+                        div
+                            img.img-responsive(src='offical/images/bg7.png')
+                        div
+                            img.img-responsive(src='offical/images/bg8.png')
+                        div
+                            img.img-responsive(src='offical/images/bg9.png')
+
+
+    div.center.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')
+
+    .mask
+        div
+            .swiper-container.gallery-top.big
+                .swiper-wrapper
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic1.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic2.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic3.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic4.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic5.jpg')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/pic6.jpg')
+                .swiper-button-next.carousel-control.g-n
+                .swiper-button-prev.carousel-control.g-p
+            .swiper-container.gallery-thumbs
+                .swiper-wrapper
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb1.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb2.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb3.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb4.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb5.png')
+                    .swiper-slide
+                        img.img-responsive(src='offical/images/thumb6.png')

@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/news.js')
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg7.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg8.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 学校动态
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/') 首页
+                    span >
+                    span
+                        a(href='/dynamics') 学校动态
+            div.news
+                span.h3
+                div.news-info
+                    span
+                div.page

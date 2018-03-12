@@ -1,0 +1,119 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/index.js')
+    .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
+        .modal-dialog.modal-sm(role='document')
+            .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                h3.modal-title.text-center 录取查询
+            .modal-content
+                form
+                    .form-group
+                        label(for='exampleInputEmail1') 考生名字：
+                        input#exampleInputEmail1.form-control(type='text', placeholder='请输入你的名字')
+                    .form-group
+                        div
+                            label 身份证号 :
+                            i#identity 请输入合法身份证！
+                        input.form-control.identity(type='text', placeholder='请输入你的身份证号')
+                    .form-group
+                        label 准考证号 :
+                        input.form-control(type='text', placeholder='请输入你的准考证号 ')
+            .modal-footer
+                button#btn.btn.btn-primary(type='button') 点击查询
+    .kefu(data='close')
+        div.kefu-left
+            img(src='../zszt/images/bg15.png')
+        div.kefu-right
+            div
+                label.text-center QQ在线咨询
+                span 客服1
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2586638391&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 客服2
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2586719492&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 招生热线：
+                div
+                    span 0558-2186612
+
+    div.center.container.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.jpg')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.jpg')
+    div.center.container
+        div.index
+            div
+                .passageway
+                    a(href='sign_online')
+                        img.img-responsive.pc-bg(src='../zszt/images/bg1.png')
+                        img.img-responsive.m-bg(src='../zszt/images/bg2.png')
+                    a(data-toggle="modal" data-target=".bs-example-modal-sm" style='cursor:pointer;')
+                        img.img-responsive.pc-bg(src='../zszt/images/bg2.png')
+                        img.img-responsive.m-bg(src='../zszt/images/bg2.png')
+                    a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=1802986156&site=qq&menu=yes")
+                        img.img-responsive.pc-bg(src='../zszt/images/bg3.png')
+                        img.img-responsive.m-bg(src='../zszt/images/bg3.png')
+            div.enrollmentList
+                div.news-title
+                    div
+                        i.iconfont.icon-kuaixunxiugaiyongzhegedianji
+                        span.h4 招生快讯
+                    div.more
+                        a(href='/zszt/news')
+                            span 更多
+                    p
+            div.polickList
+                div.news-title
+                    div
+                        i.iconfont.icon-zhengce
+                        span.h4 招生政策
+                    div.more
+                        a(href='/zszt/policy')
+                            span 更多
+                    p
+    div.center.container
+        .campus
+            div.news-title.campus-title
+                p
+                div
+                    i.iconfont.icon-zhuanyefangxiangguanli
+                    span.h4 特色专业
+                div.more
+                    a(href='/zszt/accouting')
+                        span 更多
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='images/bg4.png')
+                    span 会计
+                    p 互联网金融方向
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/accouting1')
+                    img.img-responsive(src='images/bg5.png')
+                    span 会计
+                    p 投资与理财方向
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/artdesign')
+                    img.img-responsive(src='images/bg6.png')
+                    span 艺术设计
+                    p 平面设计方向
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/artdesign1')
+                    img.img-responsive(src='images/bg7.png')
+                    span 艺术设计
+                    p 网页电商设计方向
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/computer')
+                    img.img-responsive(src='images/bg8.png')
+                    span 计算机应用技术
+                    p PHP开发工程师方向
+            div.col-md-2.col-xs-6.campus-box
+                a(href='/zszt/computer1')
+                    img.img-responsive(src='images/bg9.png')
+                    span 计算机应用技术
+                    p 软件技术开发方向
+    div.center.banner-bottom
+        img.img-responsive.pc-bg(src='../zszt/images/banner2.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner2.png')
+

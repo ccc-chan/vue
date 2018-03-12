@@ -1,0 +1,56 @@
+extends layout
+
+block content
+
+    script(type="text/javascript" src='../zszt/js/enrollment_news.js')
+    script.
+        document.title = "招生政策_广东江南理工技工学校特色专业网";
+        $.news('http://api.7171.la/api/http://api.7171.la/api/article?token=jnlgjg&code=6f4e1d3398ce113a4810398a61ebb4e4&type=183', 2);
+
+    div.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='../zszt/images/bg7.png')
+                a(href='/zszt/computer')
+                    img.img-responsive(src='../zszt/images/bg8.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 招生政策
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/zszt') 首页
+                    span >
+                    span
+                        a(href='/zszt/policy') 招生政策
+            div.col-md-12.col-xs-12
+                div.action-news-list
+                    span#none 资料正在整理中..
+                    .date-box
+                        .date
+                            h3.text-center 12
+                            span.text-center 2018-7
+                        .dyn-content
+                            //router-link(:to="{name: 'news3', params: { id: item.id }}", target='_blank')
+                            p 123
+                            span.pc-bg 1231232132131231231231212
+                // fenye
+                nav#page.p-page(aria-label='Page navigation')
+                    ul.pagination
+                        li.prev
+                            a(href='#', aria-label='Previous')
+                                span(aria-hidden='true') 上一页
+                        li.jump
+                            a(href='#') 1
+                        li.next
+                            a(href='#', aria-label='Next')
+                                span(aria-hidden='true') 下一页
+                nav#page1.m-page(aria-label='...')
+                    ul.pager
+                        li.prev
+                            a(href='#') 上一页
+                        li.next
+                            a(href='#') 下一页

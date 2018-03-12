@@ -1,0 +1,93 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.center.container
+        div.two-one
+            div
+                div.news-title
+                    div
+                        i.iconfont.icon-xinwenzixun
+                        span.h4 学院动态
+                    p
+                    div.more
+                        a(href='/dynamics')
+                            span 更多
+                div.two
+                    div.swiper-container.lunbo
+                        div.swiper-wrapper
+                        div.pagination
+                            div
+                                h5
+                            div.index
+                    div.dyn
+            div
+                div.news-title
+                    div
+                        i.iconfont.icon-xinrenkecheng
+                        span.h4 专业建设
+                    p
+                    div.more
+                        a(href='/sconstruction')
+                            span 更多
+                div.sc( style='margin:15px 0;overflow: hidden;')
+    div.container.center
+        div.three
+            div.co
+                div.news-title
+                    div
+                        i.iconfont.icon-dangjian
+                        span.h4 党团建设
+                    p
+                    div.more
+                        a(href='/construction')
+                            span 更多
+            div.shixi
+                div.news-title
+                    div
+                        i.iconfont.icon-gongwenbao
+                        span.h4 就业实习
+                    p
+                    div.more
+                        a(href='/employment')
+                            span 更多
+            div
+                div.news-title
+                    div
+                        i.iconfont.icon-tuandui
+                        span.h4 师资队伍
+                    p
+                    div.more
+                        a(href='/teacher')
+                            span 更多
+                div.swiper-container.shizi
+                    div.swiper-wrapper
+                    .swiper-button-next.carousel-control.t-n
+                        i.iconfont.icon-right
+                    .swiper-button-prev.carousel-control.t-p
+                        i.iconfont.icon-back
+    div.container.center
+        div.news-title.campus-title
+            div
+                i.iconfont.icon-daxue
+                span.h4 校园环境
+                p
+            div.more
+                span 更多
+        .five
+            div
+                img.img-responsive(src='offical/images/1.png')
+            div
+                img.img-responsive(src='offical/images/2.png')
+            div
+                img.img-responsive(src='offical/images/3.png')
+            div
+                img.img-responsive(src='offical/images/4.png')
+            div.pc-bg
+                img.img-responsive(src='offical/images/5.png')
+    div.center.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')

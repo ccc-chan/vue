@@ -1,0 +1,69 @@
+div
+    div.nav-mask
+    div.pc-bg
+        div.header-top
+            div.container
+                div.top-left
+                    div
+                        span 欢迎访问阜阳计算机学校——招生专题网
+                div.top-right
+                    div
+                        i.iconfont.icon-shouye1
+                        a(href='/' target='_blank') 特色专业网
+        div.logo
+            div.container
+                a(href='/zszt')
+                    img(src='../zszt/images/logo.png' class='fl')
+                img(src='../zszt/images/logo1.png' class='fr')
+        nav.pc-nav
+            div.container
+                ul.list-unstyled.list-inline.first-nav
+                    if header
+                        each val,index in header
+                            if( index == ind)
+                                li.active
+                                    a.text-center(href=val.mca) #{val.name}
+                                    ul.second-nav.list-unstyled
+                                        each val1 in val._data
+                                            li
+                                                a.text-center(href=val1.mca) #{val1.name}
+                            else
+                                li
+                                    a.text-center(href=val.mca) #{val.name}
+                                    ul.second-nav.list-unstyled
+                                        each val1 in val._data
+                                            li
+                                                a.text-center(href=val1.mca) #{val1.name}
+    div.m-bg
+        div.m-top
+            a(href='/zszt')
+                img(src='../zszt/images/m-logo.png')
+            img.m-nav-botton(src='../zszt/images/nav.png' data="close")
+        div.m-logo
+            img(src='../zszt/images/m-logo2.png')
+        nav.m-nav
+            ul
+                if header
+                    each val,index in header
+                        li
+                            a(data=val.mca)
+                                i.iconfont( class=val.ico)
+                                span #{val.name}
+                            ul.m-second-nav.list-unstyled
+                                each val1 in val._data
+                                    li
+                                        a(href=val1.mca)
+                                            span #{val1.name}
+                script.
+                    $(function () {
+                        $(".m-nav >ul >li").click(function () {
+                            var ind = $(this).index();
+                            if(ind != 6){
+                                var url = $(this).find('a').eq(0).attr('data');
+                                $(location).attr('href', url);
+                            }else{
+                                $(this).find('ul').toggle();
+                            }
+                        });
+                    });
+

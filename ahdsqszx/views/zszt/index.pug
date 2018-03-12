@@ -1,0 +1,115 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/index.js')
+    .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
+        .modal-dialog.modal-sm(role='document')
+            .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                h3.modal-title.text-center 录取查询
+            .modal-content
+                form
+                    .form-group
+                        label(for='exampleInputEmail1') 考生名字：
+                        input#exampleInputEmail1.form-control(type='text', placeholder='请输入你的名字')
+                    .form-group
+                        div
+                            label 身份证号 :
+                            i#identity 请输入合法身份证！
+                        input.form-control.identity(type='text', placeholder='请输入你的身份证号')
+                    .form-group
+                        label 准考证号 :
+                        input.form-control(type='text', placeholder='请输入你的准考证号 ')
+            .modal-footer
+                button#btn.btn.btn-primary(type='button') 点击查询
+    .kefu(data='close')
+        div.kefu-left
+            img(src='../zszt/images/bg15.png')
+        div.kefu-right
+            div
+                label.text-center QQ在线咨询
+                span 客服1
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=1225203302&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 客服2
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=1225294280&site=qq&menu=ye")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 招生热线：
+                div
+                    span 0711-3561598
+
+    div.center.container.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+    div.center.container
+        div.row.index
+            div
+                .passageway
+                    a(href='sign_online')
+                        img.img-responsive.pc-bg(src='../zszt/images/bg1.png')
+                        img.img-responsive.m-bg(src='../zszt/images/m-bg3.png')
+                    a(data-toggle="modal" data-target=".bs-example-modal-sm" style='cursor:pointer;')
+                        img.img-responsive.pc-bg(src='../zszt/images/bg2.png')
+                        img.img-responsive.m-bg(src='../zszt/images/m-bg1.png')
+                    a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2586325613&site=qq&menu=yes")
+                        img.img-responsive.pc-bg(src='../zszt/images/bg3.png')
+                        img.img-responsive.m-bg(src='../zszt/images/m-bg2.png')
+            div.enrollmentList
+                .news-title
+                    div
+                        p
+                        span 招生快讯
+                    .more
+                        a(href='/zszt/news')
+                            span 更多+
+            div.polickList
+                div.news-title
+                    div
+                        p
+                        span.h4 招生政策
+                    div.more
+                        a(href='/zszt/policy')
+                            span 更多+
+
+    div.center.container
+        .campus.row
+            div.news-title.campus-title
+                div.tese
+                    p
+                    span.h4 特色专业
+                div.more
+                    a(href='/zszt/accouting')
+                        span 更多
+            .campus-box
+                div
+                    a(href='/zszt/accouting')
+                        img.img-responsive(src='../zszt/images/bg4.png')
+                        span.text-center 投资与理财
+                        p.text-center 互联网金融方向
+                div
+                    a(href='/zszt/accouting')
+                        img.img-responsive(src='../zszt/images/bg4.png')
+                        span.text-center 投资与理财
+                        p.text-center 互联网金融方向
+                div
+                    a(href='/zszt/accouting')
+                        img.img-responsive(src='../zszt/images/bg4.png')
+                        span.text-center 投资与理财
+                        p.text-center 互联网金融方向
+                div
+                    a(href='/zszt/accouting')
+                        img.img-responsive(src='../zszt/images/bg4.png')
+                        span.text-center 投资与理财
+                        p.text-center 互联网金融方向
+                div
+                    a(href='/zszt/accouting')
+                        img.img-responsive(src='../zszt/images/bg4.png')
+                        span.text-center 投资与理财
+                        p.text-center 互联网金融方向
+
+
+    div.center.banner-bottom
+        img.img-responsive.pc-bg(src='../zszt/images/banner1.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner1.png')
+

@@ -1,0 +1,179 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/index.js')
+    .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
+        .modal-dialog.modal-sm(role='document')
+            .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                h3.modal-title.text-center 录取查询
+            .modal-content
+                form
+                    .form-group
+                        label(for='exampleInputEmail1') 考生名字：
+                        input#exampleInputEmail1.form-control(type='text', placeholder='请输入你的名字')
+                    .form-group
+                        div
+                            label 身份证号 :
+                            i#identity 请输入合法身份证！
+                        input.form-control.identity(type='text', placeholder='请输入你的身份证号')
+                    .form-group
+                        label 准考证号 :
+                        input.form-control(type='text', placeholder='请输入你的准考证号 ')
+            .modal-footer
+                button#btn.btn.btn-primary(type='button') 点击查询
+    .kefu(data='close')
+        div.kefu-left
+            img(src='../zszt/images/bg12.png')
+        div.kefu-right
+            div
+                label.text-center QQ在线咨询
+                span 客服1
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2606014642&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 客服2
+                a(target="_blank", href="http://wpa.qq.com/msgrd?v=3&uin=2609812260&site=qq&menu=yes")
+                    img(border="0", src="http://wpa.qq.com/pa?p=2:2885130026:41", alt="点击这里给我发消息", title="点击这里给我发消息")
+                span 招生热线：
+                div
+                    span 0711-3561598
+
+    div.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner.png')
+    div.container.center.index
+        div.passageway
+            a(href='/zsszt/sign')
+                img.img-responsive.pc-bg(src='../zszt/images/bg1.png')
+                img.img-responsive.m-bg(src='../zszt/images/m-bg1.png')
+            a(data-toggle="modal" data-target=".bs-example-modal-sm" style='cursor:pointer;')
+                img.img-responsive.pc-bg(src='../zszt/images/bg2.png')
+                img.img-responsive.m-bg(src='../zszt/images/m-bg2.png')
+            a(href='/zszt/brochure')
+                img.img-responsive.pc-bg(src='../zszt/images/bg3.png')
+                img.img-responsive.m-bg(src='../zszt/images/m-bg3.png')
+        div.enrollmentList
+            div.news-title
+                p
+                div
+                    i.iconfont.icon-kuaixunxiugaiyongzhegedianji
+                    span.h4 招生快讯
+                div.more
+                    a(href='/zszt/news')
+                        span 更多
+
+
+        div.polickList
+            div.news-title
+                p
+                div
+                    i.iconfont.icon-zhengce
+                    span.h4 招生政策
+                div.more
+                    a(href='/zszt/policy')
+                    span 更多
+
+    div.container.center
+        div.news-title
+            div.major
+                i.iconfont.icon-ai-book
+                span.h4 特色专业
+            div.more
+                a(href='/zszt/computer')
+                span 更多
+        div.three
+            div
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='../zszt/images/bg4.png')
+            div
+                a(href='/zszt/accouting1')
+                    img.img-responsive(src='../zszt/images/bg5.png')
+            div
+                a(href='/zszt/accouting2')
+                    img.img-responsive(src='../zszt/images/bg6.png')
+            div
+                a(href='/zszt/artdesign')
+                    img.img-responsive(src='../zszt/images/bg14.png')
+            div
+                a(href='/zszt/artdesign1')
+                    img.img-responsive(src='../zszt/images/bg15.png')
+            div
+                a(href='/zszt/artdesign2')
+                    img.img-responsive(src='../zszt/images/bg16.png')
+            div
+                a(href='/zszt/computer')
+                    img.img-responsive(src='../zszt/images/bg17.png')
+            div
+                a(href='/zszt/computer1')
+                    img.img-responsive(src='../zszt/images/bg18.png')
+            div
+                a(href='/zszt/computer2')
+                    img.img-responsive(src='../zszt/images/bg19.png')
+    div.banner-bottom
+        img.img-responsive.pc-bg(src='../zszt/images/banner1.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner1.png')
+
+    style.
+        .modal-dialog {
+            background: #fefefe;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            margin: 150px auto;
+        }
+
+        .modal-header {
+            border: 0;
+            padding: 15px 15px 0;
+        }
+
+        .modal-content {
+            box-shadow: initial;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            border: 0;
+        }
+
+        .modal-header h3 {
+            color: #163b8a;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .modal-footer {
+            padding: 10px;
+            text-align: center;
+            border-top: 0;
+        }
+
+        .form-group {
+            width: 90%;
+            margin: 5px auto;
+        }
+
+        .btn {
+            width: 70%;
+            background: #336d9f;
+            border-color: #336d9f;
+        }
+
+        form label {
+            color: #336d9f;
+        }
+
+        .form-group i {
+            display: none;
+            float: right;
+            font-size: 13px;
+            font-style: normal;
+            color: #eb1717;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        body.modal-open {
+            overflow-y: auto !important;
+            padding-right: 0 !important;
+        }

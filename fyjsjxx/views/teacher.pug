@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/teacher.js')
+    script.
+        $(function () {
+            document.title="师资队伍_阜阳计算机学校特色专业网";
+        });
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12.pc-bg.row
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg1.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg2.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 师资队伍
+            div.teacher-title
+                span 学校建立有一支实力雄厚、治学严谨的“双师型”教学队伍，相关专业老师具备多年的项目工作经验和教学经验，将“工学结合”的培养模式落到实处，为学校的教育发展奠定了坚实的基础，培养更多应用型人才。
+            div.teacher

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='../zszt/js/sc_info.js')
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='../zszt/images/banner1.png')
+        img.img-responsive.m-bg(src='../zszt/images/m-banner1.png')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg
+            div.zhaosheng
+                a(href='/zszt/sign')
+                    img.img-responsive(src='images/bg10.png')
+                a(href='/zszt/accouting')
+                    img.img-responsive(src='images/bg11.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 学院简介
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/zszt') 首页
+                    span >
+                    span
+                        a(href='/zszt/info') 学院简介
+            div.col-md-12.col-xs-12
+                div.sc-info

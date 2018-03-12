@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/construction.js')
+    script.
+        $(function () {
+            document.title="党团建设_广西畜牧兽医学校特色专业网";
+            $.news('http://api.7171.la/api/article?token=xmsy&code=fe0867b90b2a28b3df69eb8d7bd96681&type=155',2)
+        });
+    div.container.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    div.container.center
+        div.col-md-3.col-xs-12.row.pc-bg.pl-0
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg1.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg2.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 党团建设
+            div.col-md-12.col-xs-12
+                div.action-news-list
+                    span#none 资料正在整理中..
+
+
+                // fenye
+                nav#page.p-page(aria-label='Page navigation')
+                    ul.pagination
+                        li.prev
+                            a(href='#', aria-label='Previous')
+                                span(aria-hidden='true') 上一页
+                        li.jump
+                            a(href='#') 1
+                        li.next
+                            a(href='#', aria-label='Next')
+                                span(aria-hidden='true') 下一页
+                nav#page1.m-page(aria-label='...')
+                    ul.pager
+                        li.prev
+                            a(href='#') 上一页
+                        li.next
+                            a(href='#') 下一页

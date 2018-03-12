@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='/js/teacher.js')
+    script.
+        $(function () {
+            document.title="师资队伍_南宁市工贸职业技术学校互联网学院";
+        });
+    div.center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.jpg')
+        img.img-responsive.m-bg(src='offical/images/m-banner.jpg')
+    div.container.center
+        div.col-md-3.col-xs-12
+            div.zhaosheng
+                a(href='/zszt/brochure')
+                    img.img-responsive(src='offical/images/bg1.png')
+                a(href='/zszt/news')
+                    img.img-responsive(src='offical/images/bg2.png')
+        div.col-md-9.col-xs-12.info
+            div.info-title
+                h4 师资队伍
+                    p
+                div.info-title-right.pc-bg
+                    span
+                        a(href='/') 首页
+                    span >
+                    span
+                        a(href='/teacher') 师资队伍
+            div.teacher-title
+                span 学校拥有一支理论扎实、教学经验丰富的教师队伍，双师型老师授课，深耕教学，坚持以教学为中心、学生为主体，教师为主导的思路，严格规范学校教学和管理。
+            div.teacher

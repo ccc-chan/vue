@@ -1,0 +1,84 @@
+extends layout
+
+block content
+    script(type="text/javascript" src='offical/js/index.js')
+    .center.banner
+        img.img-responsive.pc-bg(src='offical/images/banner.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner.png')
+    .container.center
+        .type
+            label.h4
+                | 新闻
+                span 中心
+            span News Reporting Center
+            p
+        .clear
+            .width-6.dyn
+                div
+                    label.h4 学校动态
+                    .more
+                        a(href='/dynamics')
+                            span +more
+                .dyn-list
+
+            .width-3.jiuye
+                label.h4 就业实习
+                .more
+                    a(href='/employment')
+                        span +more
+                .col-xs-12
+                    .swiper-container.lunbo
+                        .swiper-wrapper.shixi
+                            .swiper-slide(v-for='item in stuList')
+                                a(href='#')
+                                    img.img-responsive(:src='item.pic')
+                        // Add Pagination
+                        .pagination
+                            div
+                                h5
+                            .index
+
+        .co.center
+            label.h4 专业建设
+            .more
+                a(href='/sconstruction')
+                    span +more
+            .two.sc
+
+    .container.center
+        .youshi-title.clear
+            .type
+                label.h4
+                    | 党团
+                    span 建设
+                span The construction of the Party group
+            .more.youshi-more
+                a(href='/construction')
+                    span +more
+            p
+        .youshi.three.dang
+
+    .campus
+        .container
+            .campus-title.clear
+                .type
+                    label.h4
+                        | 校园
+                        span 环境
+                    span  School Environment
+                .more
+                    span +more
+                p
+            .campus-box
+                .col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg3.png')
+                .col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg4.png')
+                .col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg5.png')
+                .col-md-3.col-xs-6
+                    img.img-responsive(src='offical/images/bg6.png')
+    div.banner-bottom
+        img.img-responsive.pc-bg(src='offical/images/banner1.png')
+        img.img-responsive.m-bg(src='offical/images/m-banner1.png')
+
